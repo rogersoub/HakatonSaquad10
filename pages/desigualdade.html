@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desigualdade</title>
+    <link rel="stylesheet" href="/styles/desigualdade.css">
 </head>
 <body>
-    <h1>Teste</h1>
+    <main>
+        <section id="dados">
+        
+    </section>
+
+    <section id="preconceito">
+
+    </section>
+
+    <!-- ROGER -->
+    <section id="solucao">
+        <h1>Um outro problema é a má qualidade dos cuidados prestados a muitos que recebem tratamento.</h1>
+        <p>Além do apoio dos serviços de saúde, pessoas com transtornos mentais precisam de apoio e cuidados sociais. Frequentemente necessitam também de ajuda para acessar programas educativos que se adaptem às suas necessidades e encontrar emprego e moradia que lhes permitam viver e ser ativos nas suas comunidades locais.</p>
+
+        <!-- BUSCA CEP -->
+        <article id="sendCep">
+            <form id="formCep">
+                <label for="cep"><h2>Digite seu CEP</h2></label>
+                <input type="text" maxlength="8" placeholder="Somente números" id="cep">
+                <input type="submit" value="enviar">
+            </form>
+        </article>
+
+        <!-- MOSTRA LUGARES DE ENSINO -->
+        <article id="viewLearn" class="viewSuport">
+            <img src="" id="imgLearn">
+            <h1 id="h1Learn"></h1>
+            <p id="pLearn"></p>
+        </article>
+
+        <!-- MOSTRA PROJETOS SOCIAIS / LUGARES DE CUIDADO -->
+        <article id="viewSociety" class="viewSuport">
+            <img src="" id="imgSociety">
+            <h1 id="h1Society"></h1>
+            <p id="pSociety"></p>
+        </article>
+
+    </section>
+    </main>
+    
+    <script src="/js/getCep.js"></script>
 </body>
 </html>
