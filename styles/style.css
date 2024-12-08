@@ -1,0 +1,326 @@
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Lilita+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Modak&display=swap');
+
+
+/* UNIVERSAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', system-ui;
+    list-style: none;
+    text-decoration: none;
+    }
+:root{  
+    --puple:#800080;
+    --purpleSoft: #7d5b8c;
+    --brow:#f4a460;
+    --white:#eed9eb;
+    --transitionGray:#d0cedd;
+    --Lgray:#504f4f;
+    --dark:#1e1c2a;
+    }
+body{
+    color: var(--dark);
+    background-color: var(--white);
+    overflow-x: hidden; /* tira a barra de rolagem horizontal */
+}
+h1{
+    font-family: "DynaPuff", system-ui;
+}
+
+
+
+/* REVELADOR em scrolReveal.js */
+.text-h1-paralax, .graphic{
+    visibility: hidden;/* tem que tirar a visibilidade */
+}
+
+
+
+/* CEBACALHO */
+#header-mobile{
+    display: none;
+}
+#header-desk img{
+    width: 15dvw !important;
+    padding: 1rem;
+}
+
+#header-desk{
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1;
+    width: 100dvw;
+    position: relative;
+    box-shadow: 0 1.5rem 1.5rem #f7eff5;
+    margin-bottom: 2rem;
+}
+
+#header-desk ul{
+    display: flex;
+    align-items: center;
+    gap: 8dvw;
+}
+#header-desk li{
+    padding: 1rem;
+    text-decoration: none;
+}
+a{
+    color: var(--purpleSoft);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+a:active{
+    color: var(--puple);
+}
+a:hover{
+    color: var(--puple);
+}
+
+/* UNIVERSAL SESOES */
+.sections{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items:center; /* ao centro*/
+    justify-content:center; /* centralizado */
+    padding: 0px 10%;
+
+}
+
+
+
+/* SESSÃO O QUE É */
+.area-text{
+    max-width: 37rem;
+}
+
+.text-h4{
+    font-size: 1.5rem;
+    color: var(--puple);
+    margin-bottom: -1rem;
+}
+
+.text-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.text-p{
+    margin-bottom: 4rem;
+}
+
+.text-img img{
+    width: 30dvw;
+
+}
+/* aside do lado */
+.types{
+    width: 100%;
+}
+
+
+/* SESAÕ DE TRANSIÇÃO */
+
+.paralax{
+    margin: 5rem 0rem;/* cima e baixo, direita e esqueda */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important; /* vai ficar na tela toda */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+/* paralax globais */
+.paralax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 255, 0) 40%, #ffffff 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 255, 0) 40%, #ffffff 100%);
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 255, 0) 40%, #ffffff 100%);
+}
+/* primeiro paralax */
+.paralax.paralax-1{
+    background-image: url("/images/buterfly.jpg");
+}
+/* h1 do paralax */
+.paralax h1{
+    text-align: center;
+    font-size: 3rem;
+    z-index: 50;
+    text-transform: uppercase;
+}
+
+
+
+/* SESAÕ SINTOMAS PEDRO */
+.sections.sintomas{
+    background-color: var(--purpleSoft);
+    border-radius: 6rem;
+    width: auto;
+    height: auto;
+}
+
+
+
+/* SESÃO DADOS */
+.sections.dados{
+    /* text-align: center; */
+    flex-direction: column;/* coluna */
+    margin-top: 4rem;
+}
+.dados .text-p{
+    margin-bottom: 0rem;
+}
+
+.graphic{
+    width: 80dvw;
+
+}
+.graphic ul li{
+ margin: 2rem 0rem;
+
+}
+
+.graphic .bars{
+    background-color: var(--transitionGray);
+    display: block;
+    height: 3vh;
+    position: relative;
+    border-radius: 10rem;
+    overflow: hidden;/* a cor vai ficar atrás desse */
+    transition: .5s ease-in-out; /* impede que a cor volte */
+    
+}
+/* > vai funcionar apenas nas classes dentro de span */
+.bars > span{
+    height: 3vh;
+    background: linear-gradient(to right, #7d5b8c,#800080);
+    position: absolute;
+}
+.mini{
+    width: 80%;
+    animation: mini 3s;/* chama a animação */
+}
+.big{
+    width: 42%;
+    animation: big 3s;
+}
+/* fine a animação qquando começa */
+@keyframes mini{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes big{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 42%;
+    }
+}
+
+
+
+
+/* RESPONSIVIDADE */
+/* celulares, entra se diminuir menos que 1000px */
+@media(max-width:1000px){
+
+    /* TEXTOS */
+    a{
+        font-size:1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .text-h1{
+        font-size: 2rem;
+    }
+    .text-h4{
+        font-size: 1rem;
+        margin-bottom: -3rem;
+        margin-top: 2rem;
+    }
+    
+
+    /* CABECALHO */
+    #header-desk{
+         display: none; /*esconde o desk*/
+    }
+
+   #header-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 2rem;
+        font-size: 1rem;
+        box-shadow: 0 1.5rem 1.5rem #f7eff5;
+    }
+
+    #header-mobile img{
+        width: 35dvw;
+        padding: 0rem;
+    }
+
+    #navDocs{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        align-items: center;
+    }
+    
+    #header-mobile li{
+        padding: 1rem;
+    }
+
+
+
+    /* SECAO O QUE E */
+
+    .sections.oQueE{
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;/* como coluna */
+        padding: 0px 10%;
+    }
+    
+    .area-text{
+        max-width: auto;
+        word-wrap: break-word; /* Quebra o texto em palavras longas */
+        height: auto;
+
+    }
+    .text-img img{
+        width: 60dvw;
+    }
+}
+
+
+@media(max-width:1100px){
+    #header-desk ul{
+        gap: 2dvw;
+    }
+}

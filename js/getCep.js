@@ -98,5 +98,3 @@ view.addEventListener("submit",(event) =>{//não vai recarregar
 
 
 
-
-//GPT:
