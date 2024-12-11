@@ -1,0 +1,178 @@
+/* SESSÃO RELATOS */
+.relatos {
+    width: 100%;
+    height: auto;
+    padding: 2rem 10%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.relatos h1 {
+    font-size: 3rem;
+    font-family: 'DynaPuff', sans-serif;
+    color: var(--puple);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.relatos h2 {
+    font-size: 2.5rem;
+    font-family: 'DynaPuff', sans-serif;
+    color: var(--puple);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Conteúdo do relato */
+.relatos .relato {
+    width: 100%;
+    max-width: 800px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: var(--transitionGray);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.relatos .relato h3 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.relatos .relato p {
+    font-size: 1rem;
+    color: var(--Lgray);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.relatos .relato img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+/* Ajuste para vídeos e embed */
+iframe {
+    max-width: 100%;
+    width: 80%; /* Define a largura do vídeo para 80% da tela */
+    height: 500px; /* Aumenta a altura do vídeo */
+    border-radius: 10px;
+    display: block; /* Garante que o vídeo ocupe uma linha inteira */
+    margin: 0 auto; /* Centraliza o vídeo */
+}
+
+/* Botões de ação */
+.relatos .info-button {
+    display: inline-block;
+    background-color: var(--puple);
+    color: var(--white);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 2rem;
+    transition: 0.3s ease;
+}
+
+.relatos .info-button:hover {
+    background-color: var(--purpleSoft);
+}
+
+/* Estilo para botões de 'Ver mais' */
+.relatos .more-relatos button {
+    display: inline-block;
+    background-color: var(--puple);
+    color: var(--white);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 2rem;
+    transition: 0.3s ease;
+}
+
+.relatos .more-relatos button:hover {
+    background-color: var(--purpleSoft);
+}
+
+.sections.referencias{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 767px) {
+    .relatos {
+        padding: 2rem 5%;
+    }
+
+    /* Ajuste do título e subtítulos */
+    .relatos h1, .relatos h2 {
+        font-size: 2rem;
+    }
+
+    /* Ajustando o conteúdo dos relatos */
+    .relatos .relato {
+        padding: 1rem;
+    }
+
+    .relatos .relato h3 {
+        font-size: 1.5rem;
+    }
+
+    .relatos .relato p {
+        font-size: 0.9rem;
+    }
+
+    .relatos .info-button, .relatos .more-relatos button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    /* Ajuste nos vídeos iframe para melhor visualização */
+    iframe {
+        width: 100%;
+        height: 300px;
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+
+    /* Ajuste do layout da área de exemplo */
+    .area-text {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* Inputs e campos para deixar mais ajustados */
+    .area-exemple input {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-top: 1rem;
+        border: 1px solid #ddd;
+    }
+
+    /* Removendo margens grandes nos botões */
+    .info-button {
+        margin-top: 1rem;
+    }
+
+
+}
+
+
+
