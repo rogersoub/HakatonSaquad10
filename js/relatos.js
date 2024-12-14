@@ -1,5 +1,14 @@
+//dados
 const nameinp = document.getElementById("nameInp");
 const msginp = document.getElementById("msgInp");
+//area de resultado
+const areaResult = document.getElementById('exemple-result');
+areaResult.style.display = "none";
+
+//modal
+const modalDiv = document.createElement("div");
+const modalText = document.createElement("h1");
+
 
 class Person{
         constructor(){
@@ -8,31 +17,38 @@ class Person{
 
         //ADICIONA
         add(names,texts){
-            if(names && texts){
-                const newReport = {
+            //verifica se tá vazio
+            try{
+                if(!names && !texts){
+                    throw new Error("Preencha os dois campos");//gera erro
+                }
+                
+            const newReport = {
                     names,
                     texts
                 };
                 this.reports.push(newReport);//coloca no array de objetos o tal objeto
 
-                console.log(this.reports);
+                // console.log(this.reports);
 
                 this.reading()//vai ver
+
                 //limpa
-                console.log(this.reports)
                 nameinp.value='';
                 msginp.value = '';
 
-            }else{
-                console.log("tá vazio");//COLOCAR MODAL
+                modalText.innerText = '';//recebe o erro
+            }catch(erro){
+                openModal(erro.message)
             }
             
         }
 
         // MOSTRA
         reading(){
-            const areaResult = document.getElementById('exemple-result');
+            areaResult.style.display = "flex";
             areaResult.innerHTML = '';
+
 
             this.reports.forEach((reportFor,i)=>{
                 //AREAS DE VISÃO
@@ -76,17 +92,44 @@ class Person{
 const related = new Person();//instanciamento
 
 
-const btn = document.getElementById("send");
 
-//clique
-btn.addEventListener("click", (event)=> {
+//clique/submit/enter
+const form = document.getElementById("form");
+form.addEventListener("submit", (event)=> {
     event.preventDefault();//clicque
 
-    const name = nameinp.value.trim();
-    const text = msginp.value.trim();
 
-    related.add(name, text)
+
+        const name = nameinp.value.trim();
+        const text = msginp.value.trim();
+
+        related.add(name, text);
+
     
 
+
 });   
+
+
+function openModal(message){
+    alert(message)
+
+    // modalDiv.id = "modalDiv";
+    // modalDiv.style.display="flex";
+    // document.body.append(modalDiv);//coloca ele no site
+
+
+    // modalText.className = "text-h1";
+
+    // modalText.innerText = message;//recebe o erro
+    // modalDiv.append(modalText);//coloca o testo
+    
+    // setTimeout(closeModal,10000)
+}
+
+// function closeModal(){
+//     modalDiv.style.display = "none"
+// }
+
+  
 

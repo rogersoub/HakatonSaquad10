@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/images/logoRound.png">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" type="image/png" href="../images/logoRound.png">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Transtornos psicológicos</title>
     <link rel="stylesheet" href="../styles/global.css">
@@ -17,16 +16,16 @@
                 
                     <ul id="navDocs">
                         <!-- aqui vem a imagem -->
-                        <li><img src="/images/logoEscritasemf.png" alt=""></li>
+                        <li><img src="../images/logoEscritasemf.png" alt=""></li>
     
-                        <li class="navItem"><a href="#" class="navA">O que é</a></li>
+                        <li class="navItem"><a href="../pages/index.html" class="navA">O que é</a></li>
     
-                        <li class="navItem"><a href="/pages/empregabilidade.html" class="navA">Empregabilidade</a></li>
+                        <li class="navItem"><a href="../pages/empregabilidade.html" class="navA">Empregabilidade</a></li>
                 
-                        <li class="navItem"><a href="/pages/desigualdade.html" class="navA">Desigualdade</a></li>
+                        <li class="navItem"><a href="../pages/desigualdade.html" class="navA">Desigualdade</a></li>
                 
                 
-                        <li class="navItem"><a href="/pages/relatos.html" class="navA">Relatos</a></li>
+                        <li class="navItem"><a href="../pages/relatos.html" class="navA">Relatos</a></li>
     
                     </ul>
                 </nav>
@@ -37,16 +36,16 @@
                 
                     <ul id="navDocs">
                         <!-- aqui vem a imagem -->
-                        <li><img src="/images/logoEscritasemf.png" alt=""></li>
+                        <li><img src="../images/logoEscritasemf.png" alt=""></li>
     
-                        <li class="navItem"><a href="#" class="navA">O que é</a></li>
+                        <li class="navItem"><a href="../pages/index.html" class="navA">O que é</a></li>
     
-                        <li class="navItem"><a href="/pages/empregabilidade.html" class="navA">Empregabilidade</a></li>
+                        <li class="navItem"><a href="../pages/empregabilidade.html" class="navA">Empregabilidade</a></li>
                 
-                        <li class="navItem"><a href="/pages/desigualdade.html" class="navA">Desigualdade</a></li>
+                        <li class="navItem"><a href="../pages/desigualdade.html" class="navA">Desigualdade</a></li>
                 
                 
-                        <li class="navItem"><a href="/pages/relatos.html" class="navA">Relatos</a></li>
+                        <li class="navItem"><a href="../pages/relatos.html" class="navA">Relatos</a></li>
     
                     </ul>
                 </nav>
@@ -106,39 +105,57 @@
                 </article>
             </section>
 
+            <!-- TRANSIÇÃO   -->
+            <section class="paralax paralax-2">
+                <h1 class="text-h1-paralax">O futuro</h1>
+            </section>
+
+            
             <!-- COLOCA RELATO ROGER -->
-            <section class="sections colocarRelato">
+            <section class="sections perspectiva">
                 <article class="area-text">
                     <h1 class="text-h1">Vamos criar uma sociedade anticapacitista</h1>
                     <p class="text-p">
                     As crianças que estão hoje na escola, convivendo com outras crianças com deficiência, estão aprendendo na diversidade. É uma forma de naturalizar os corpos com deficiência, mas também de tensionar os grupos e espaços a serem acessíveis e receptivos.</p>
-                    <p class="text-p">O convívio com a diversidade é o caminho, mas também é possível construir com um pensamento crítico que não reproduza os preconceitos tão comuns hoje em dia. Assim, recursos como atendimento educacional especializado no contraturno escolar e segundo professor de turma de acordo com as necessidades de cada, terá na maioria dos locais.</p>
-                </article>
+                    
+                    <p class="text-p text-p2">O convívio com a diversidade é o caminho, mas também é possível construir com um pensamento crítico que não reproduza os preconceitos tão comuns hoje em dia. Assim, recursos como atendimento educacional especializado no contraturno escolar e segundo professor de turma de acordo com as necessidades de cada, terá na maioria dos locais.</p>
+                </article> 
+                <article class="text-img">
+                    <img src="../images/unificad.png" alt="" class="unificad">
+                </article>  
+
+            </section>
+
+            <section class="sections colocarRelato">
                 <article class="area-text">
+                    <h4 class="text-h4">Se você tem algum relato de sucesso, deixe o exemplo </h4>
                     <h1 class="text-h1">Inspire outras pessoas</h1>
-                    <h4 class="text-p">Se você tem algum relato de sucesso, deixe o exemplo </h4>
                     <p class="text-p">leia mais sobre capacitismo em: <a href="">Desigualdade</a></p>
                 </article>
 
                 <article class="area-exemple">
-                    <form action="">
-                        <label for="">Digite o seu nome</label>
-                        <input type="text" id="nameInp" placeholder="Nome">
+                    <form action="" id="form">
 
-                        <label for="">Digite seu relato</label>
-                        <textarea id="msgInp" cols="50" rows="15" placeholder="Deixe sua mensagem e/ou um resumo de no má" maxlength=""></textarea>
+                        <label for="nameInp" class="labelOff">Digite o seu nome</label>
+                        <input type="text" id="nameInp" placeholder="Nome" class="inputUser" maxlength="50">
+                        
+                        
+                        <label for="msgInp" class="labelOff">Digite seu relato</label>
+                        <textarea id="msgInp" cols="50" rows="15" placeholder="Deixe sua mensagem e/ou um resumo de no máximo 500 caracteres" maxlength="500" class="inputUser"></textarea>
+                        
+                        
                         <input type="submit" value="Enviar" id="send">
                     </form>
-                    
+        
                 </article>
 
-                <article id="exemple-result">
-
-                </article>
 
             </section>
 
-            <!-- REFERÊNCIAS BEM SUCEDIDAS MARIA -->
+            <section id="exemple-result" class="sections resultRelatos">
+            </section>
+
+            <!-- REFERENCIAIS MARIA -->
             <section class="sections referencias">
                 <h2>Exemplos Bem-Sucedidos de Inclusão</h2>
                 <p>Algumas iniciativas mostram como é possível promover a inclusão de pessoas com deficiência nas comunidades indígenas:</p>
@@ -164,9 +181,9 @@
                     <div>
                         <ul class="ListFooter">
                             <h3 class="SubTitle">Entenda mais sobre o assunto em:</h3>
-                            <li><a href="#" target="_blank" rel="noopener noreferrer">Empregabilidade</a></li>
-                            <li><a href="#">Desigualdade</a></li>
-                            <li><a href="relatos.html">Relatos</a></li>
+                            <li><a href="../pages/empregabilidade.html" target="_blank" rel="noopener noreferrer">Empregabilidade</a></li>
+                            <li><a href="../pages/desigualdade.html">Desigualdade</a></li>
+                            <li><a href="../pages/relatos.html">Relatos</a></li>
                         </ul>
                         <div class="ResponsiveRoll"></div>
                     </div>
