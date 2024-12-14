@@ -1,0 +1,433 @@
+.relatos {
+    width: 100%;
+    height: auto;
+    padding: 2rem 10%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.relatos h1 {
+    font-size: 3rem;
+    font-family: 'DynaPuff', sans-serif;
+    color: var(--puple);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.relatos h2 {
+    font-size: 2.5rem;
+    font-family: 'DynaPuff', sans-serif;
+    color: var(--puple);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.relatos .relato {
+    width: 100%;
+    max-width: 800px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: var(--transitionGray);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.relatos .relato h3 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.relatos .relato p {
+    font-size: 1rem;
+    color: var(--Lgray);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.relatos .relato img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+
+iframe {
+    max-width: 100%;
+    width: 80%; 
+    height: 500px; 
+    border-radius: 10px;
+    display: block; 
+    margin: 0 auto; /* Centraliza o vídeo */
+}
+
+/* Botões de ação */
+.relatos .info-button {
+    display: inline-block;
+    background-color: var(--puple);
+    color: var(--white);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 2rem;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.relatos .info-button:hover {
+    background-color: var(--purpleSoft);
+}
+
+
+.relatos .more-relatos button {
+    display: inline-block;
+    background-color: var(--puple);
+    color: var(--white);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 2rem;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.relatos .more-relatos button:hover {
+    background-color: var(--purpleSoft);
+}
+
+.sections.referencias{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* COLOCAR RELATO ROGER */
+
+/* PARALAX TRANSIÇÃO */
+.paralax.paralax-2{
+    background-image: url("../images/kidsPaint.jpg");
+}
+/* SESÃO INFORMATIVA */
+.sections.perspectiva{
+    margin-top: 13rem;
+}
+
+/* SESÃO QUE COLOCA O RELATO */
+.text-h4{
+    margin-bottom: 1rem;
+}
+.sections.colocarRelato{
+    align-items: center;
+    flex-direction:row;
+}
+
+.area-exemple{
+    width: 80%;
+    height: 100%;
+}
+/* centraliza */
+#form{
+    height: 100%;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+/* areas de interação */
+.inputUser,#send {
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    border: 0;
+    outline: 0; /* tira a mudança quando clica */
+    cursor: text;/* coloca o mause como texto */
+    width: 50%;
+    background-color: var(--white);
+
+}
+/* .inputUser{
+    border-bottom: 1rem solid  var(--purpleSoft);
+    transition: border-bottom 0.3s ease-in-out; 
+} */
+#nameInp{
+    border-bottom: 5px solid  var(--purpleSoft);
+    transition: border-bottom 0.3s ease-in-out; 
+    border-radius: 0;
+}
+
+#msgInp{  
+    border: 5px solid var(--purpleSoft);
+    transition: border-bottom 0.3s ease-in-out; 
+}
+
+.labelOff{
+    color: var(--Lgray);
+    font-size: 1rem;
+}
+/* cria mudança de cor da barra do input */
+#nameInp:focus{  
+    border-bottom: 5px solid  var(--puple);
+}
+#msgInp:focus{  
+    border: 5px solid var(--puple);
+}
+
+
+
+
+
+
+/* btn de enviar */
+#send{
+    background-color: var(--purpleSoft);
+    border-radius:10rem ;
+    font-size: 2rem;
+}
+#send:active , #send:hover, .btnDel:active ,.btnDel:hover{
+    background-color: var(--puple);
+}
+
+/* SESSÃO DOS RELATOS */
+.sections.resultRelatos{
+    width: 100%; /* ocupa toda a largura disponivel */
+    max-width: 1200px; /* limita a largura maxima da seção */
+    margin: 0 auto; /* centraliza a section na pagina */
+    padding: 1rem; /* espaçamento interno */
+    box-sizing: border-box; /* padding e border no calculo da largura */
+    background-color: var(--white); /* cor de fundo */
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column; /* coluna, elementos verticalmente */
+    gap: 1.5rem; /* espaço entre as divs */
+    overflow-y: auto; /* barra de rolagem vertical*/
+    margin-top: 2rem;
+    padding-top: 4rem;
+}
+
+/* ROLADORES RSECTION*/
+.resultRelatos::-webkit-scrollbar {
+    width: 1rem;
+}
+/* scrol */
+.resultRelatos::-webkit-scrollbar-thumb {
+    width: 1rem;
+    background-color: var(--puple);
+    border-radius: 3rem;
+}
+/* relatos divs */
+.divContent{
+    width: auto; /* Largura total do container pai */
+    max-height: 100%; /* altura máxima para os relatos é o maximo*/
+    overflow-y: auto; /* qdiciona barra de rolagem vertical */
+    word-wrap: break-word; /* quebra palavras longas */
+    padding:1rem; /* Espaçamento interno */
+    background-color: var(--transitionGray); /* cor de fundo cinza claro */
+    border: 1px solid var(--purpleSoft); /* borda suave */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombra leve */
+    font-size: 1rem;
+    line-height: 1.5; /* espaço entre linhas */
+    color: var(--dark); 
+    transition: transform 0.4s ease-in-out; /* efeito suave do mouse */
+    min-height: 60%; /* altura sempre no 60 */
+}
+/* ROLADORES DIVS*/
+.divContent::-webkit-scrollbar {
+    width: 1rem;
+}
+/* scrol */
+.divContent::-webkit-scrollbar-thumb {
+    width: 1rem;
+    background-color: var(--purpleSoft);
+    border-radius: 3rem;
+}
+
+/* Efeito de hover para a divContent */
+.divContent:hover {
+    transform: translateY(-5px); /* Eleva a div suavemente */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+.text-p{
+    max-width: 30rem;
+    word-break:break-all;
+    margin: 2rem;
+    text-align: center;
+}
+
+.btnDel{
+    background-color: var(--purpleSoft);
+    border-radius:10rem ;
+    font-size: 1rem;
+}
+.divContent.text-h4{
+    max-width: 30rem;
+    word-break:break-all;
+    margin: 2rem;
+    text-align: center;
+}
+
+/* #modalDiv{
+    position:absolute; 
+    top: 240rem; 
+    left: 50%;
+    z-index: 1000; fica acima de outros elementos
+    transform: translateX(-50%); centralizando
+    background-color:var(--purpleSoft);
+    display: flex;
+    flex-direction: column;
+    border-radius: 6rem;
+    width: 30rem;
+    height: 10rem;
+    align-items: center;
+}
+#modalDiv .text-h1{
+    text-align: center;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+/* celulares, entra se diminuir menos que 1000px */
+@media(max-width:1000px){
+    /* TEXTOS */
+    .text-h4{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    /* SESÃO INFORMATIVA */
+    .sections.perspectiva{
+        flex-direction: column;
+        margin-top: 18rem;
+    }
+
+    /* SESÃO QUE COLOCA O RELATO */
+    .sections.colocarRelato{
+        flex-direction:column;
+        margin-top: 25rem;
+    }
+
+    .sections.referencias{
+        margin-top:5rem;
+    }
+
+    
+}
+
+
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 767px) {
+
+    .relatos {
+        padding: 2rem 5%;
+    }
+
+
+    .relatos h1, .relatos h2 {
+        font-size: 2rem;
+    }
+
+ 
+    .relatos .relato {
+        padding: 1rem;
+    }
+
+    .relatos .relato h3 {
+        font-size: 1.5rem;
+    }
+
+    .relatos .relato p {
+        font-size: 0.9rem;
+    }
+
+    .relatos .info-button, .relatos .more-relatos button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+  
+    iframe {
+        width: 100%;
+        height: 300px;
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+
+   
+    .area-text {
+        text-align: center;
+        padding: 1rem;
+    }
+
+
+
+   
+    .info-button {
+        margin-top: 1rem;
+    }
+
+    /* SECTION DE COLOCAR RELATO */
+    .area-exemple{
+    }
+    /* input */
+    #nameInp,#send,#msgInp {
+        width: 100%;
+    }
+    .sections.resultRelatos{
+        margin-top: 14rem;
+    }
+
+    .sections.referencias{
+        margin-top:10rem;
+    }
+    
+
+
+}
+
+
+@media (max-width: 400px) {
+    .divContent{
+        padding:1rem; /* Espaçamento interno */
+    }
+    footer{
+        margin-top:10rem;
+    }
+
+    .sections.colocarRelato{
+        margin-top:35rem;
+    }
+    .sections.perspectiva{
+        margin-top:22rem;
+    }
+    .sections.referencias{
+        margin-top:24rem;
+    }
+}

@@ -27,11 +27,23 @@ body{
     color: var(--dark);
     background-color: var(--white);
     overflow-x: hidden; /* tira a barra de rolagem horizontal */
+    /* position: relative; não lembro se tava*/
 }
 h1{
     font-family: "DynaPuff", system-ui;
 }
 
+/* ROLADOR GLOBAL*/
+::-webkit-scrollbar {
+    width: 1rem;
+    background-color: var(--white);
+}
+/* scrol */
+::-webkit-scrollbar-thumb {
+    width: 1rem;
+    background-color: var(--Lgray);
+    border-radius: 3rem;
+}
 
 
 /* REVELADOR em scrolReveal.js */
@@ -158,7 +170,7 @@ a:hover{
 }
 /* primeiro paralax */
 .paralax.paralax-1{
-    background-image: url("/images/buterfly.jpg");
+    background-image: url("../images/buterfly.jpg");
 }
 /* h1 do paralax */
 .paralax h1{
@@ -245,7 +257,14 @@ a:hover{
 
 /* FOOTER MARIA*/
 footer {
-    min-height: 300px;
+    /* min-height: 300px; */
+
+    /* GPT */
+    height: auto;
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+    z-index: 10; /* Garante que o footer fique acima */
   }
   
   footer a {
@@ -351,7 +370,7 @@ footer {
   .Copy {
     background-color: #85277d;
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 16px;
     font-weight: 300;
   }
