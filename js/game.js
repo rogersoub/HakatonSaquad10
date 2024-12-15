@@ -7,7 +7,7 @@ class Perguntas {
     }
 
     perguntas() {
-        
+
     }
 
 }

@@ -62,8 +62,24 @@
     left: 0;
 } 
 
-.article_game > h4 {
+#seta_game {
+    margin-left: 200px;
+    margin-top: 240px;
+    justify-content: right;
+    width: 50px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+#logo_game {
+    margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+#data_game {
+    margin-top: 20px;
     font-size: 1.4rem;
 }
 
