@@ -45,6 +45,8 @@
             
                     <li class="navItem"><a href="../pages/relatos.html" class="navA">Relatos</a></li>
 
+                    <li class="navItem"><a href="../pages/game.html" class="navA">Game</a></li>
+
                 </ul>
             </nav>
         </div>
@@ -202,9 +204,7 @@
             </article>
         </section>
 
-      
-
-        <section class="sections game">
+        <section class="sections oQueE">
             <article class="area-text">
                 <h4 class="text-h4">Como estou?</h4>
                 <h1 class="text-h1"><br>"Teste seu bem estar!"</h1>
@@ -212,7 +212,7 @@
             </article>
         
             <article class="text-img">
-                <img src="../images/why.png" alt="" >
+                <img src="../images/talking.png" alt="" >
             </article>
 
             <article class="types">
@@ -223,7 +223,9 @@
         <section id="run_game">
             <div class="modal_game">
                 <article class="article_game">
-                    <img src="../images/seta-direita.png" id="seta_game">
+                    <a href="" id="link_seta">
+                        <img src="../images/seta-direita.png" alt="Seta para direita" id="seta_game">
+                    </a>
                     <h4 id="logo_game"> Logo. </h4>
                     <img src="../images/mental-adjust.png">
                     <h4 id="data_game"> 10 de octuber </h4>
@@ -231,15 +233,32 @@
             </div>
         </section>
 
-        <section class="game">
-            <div id="teste">
-                
+        <section class="perguntas" id="perguntas_display">
+            <div class="perguntas_conteiner">            
+                <article class="numero-questao"><!--CONTADOR DE QUESTÕES-->
+                    <h1 class="questoes"><span id="contadorPerguntasRespondidas">0</span></span></h1>
+                </article>
+
+                <div class="container-questao">
+                    <h1 id="tituloQuestao"> </h1>
+                    <ul>
+                        <li><button id="buttonRespSim" class="botaoResposta" data-resposta="sim">SIM</button></li>
+                        <li><button id="buttonRespNao" class="botaoResposta" data-resposta="nao">NÃO</button></li>
+                    </ul>
+                </div>
             </div>
+        </section>
+
+        <div id="resultado">
+            <h2 id="mensagemFinal"></h2>
+        </div>
+
+        <section class="game">
             <button type="submit" id="start_game"> INICIAR </button>
         </section>
-        
 
     </main>
     <script src="../js/scrolRevel.js"></script>
+    <script src="../js/game.js"></script>
 </body>
 </html>

@@ -77,7 +77,7 @@ h1{
 #header-desk ul{
     display: flex;
     align-items: center;
-    gap: 8dvw;
+    gap: 6dvw;
 }
 #header-desk li{
     padding: 1rem;
