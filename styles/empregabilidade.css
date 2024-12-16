@@ -1,37 +1,80 @@
-#dados {
-    background-color: #f9fafb;
-    padding: 30px; 
-    margin: 30px auto; 
-    border-radius: 12px; 
-    max-width: 900px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    font-family: 'Roboto', sans-serif; 
-    line-height: 1.7;
+
+
+/* KAWAN */
+
+.sections.dados {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    max-height: 300rem;
+    height: 100%;
+}
+.sections.dados:hover {
+    box-shadow: 10px 10px 10px var(--purpleSoft);
+    transition: 0.8s all;
 }
 
-#dados h2 {
-    color: #34495e; 
-    font-size: 30px; 
-    margin-bottom: 20px; 
-    font-weight: 600; 
+.sections.dados .area-text {
+    margin-bottom: 20px;
 }
 
-#dados p {
-    color: #6c757d; 
-    font-size: 18px; 
-    margin-bottom: 20px; 
-    text-align: justify; 
+.sections.dados .text-h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-#dados ul {
-    list-style-type: none; 
-    padding-left: 0;
+.sections.dados .text-p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
-#dados li {
-    font-size: 18px;
-    color: #5d6d7e; 
-    margin-bottom: 15px; 
+.sections.dados ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.sections.dados li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.sectionsdados li strong {
+    color: #000;
+}
+
+.sections.dados em {
+    font-style: italic;
+    color: #777;
+}
+
+
+
+/* SESSAO CAPACITISMO */
+.sections.capacitismo{
+    max-height: 300rem;
+    height: 100%;
+}
+.capacitismo .text-h4{
+    margin: 1rem;
+}
+
+
+
+/* SESSAO DE TRANSIÇÃO */
+.paralax.paralax-5{
+    background-image: url("../images/empregabilidade.jpg");
+}
+
+/* SAUDE DAVI */
+.sections.saude{
     display: flex;
     align-items: center; 
 }

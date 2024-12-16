@@ -310,6 +310,7 @@ ul{
 
 .game > button:hover {
     display: block;
+    margin-top: 15px;   
     width: 500px;
     height: 60px;
     transition-duration: 0.5s;
@@ -320,7 +321,7 @@ ul{
 /* Modal */
 
 #run_game {
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
