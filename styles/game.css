@@ -1,3 +1,4 @@
+
 /* SESSÃO DE DIFERENÇAS */
 .sections.diferenca{
     width: 100%;
@@ -109,5 +110,116 @@
 .sections.tipos{
     max-height: 430rem;
 }
+
+
+.game {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.game > button {
+    width: 400px;
+    height: 50px;
+    transition-duration: 0.5s;
+    border-radius:5px;
+    border: none;
+    outline: none;
+    background-color: #7d5b8c;
+    font-family: "DynaPuff", system-ui;
+    font-size: 20px;
+}
+
+.game > button:hover {
+    display: block;
+    width: 500px;
+    height: 60px;
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    cursor: pointer;
+}
+
+/* Modal */
+
+#run_game {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal_game {
+    background: #d19c41;
+    border-radius: 8px;
+    width: 40%;
+    max-width: 90%;
+    height: 80%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px #0000001a;
+    position: relative;
+}
+
+.article_game {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    top: 0;
+    left: 0;
+} 
+
+#seta_game {
+    margin-left: 200px;
+    margin-top: 240px;
+    justify-content: right;
+    width: 50px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+#logo_game {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+#data_game {
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+.article_game > img {
+    width: 50%;
+    height: auto;
+}
+
+#take_game {
+    width: 55%;
+    height: 35px;
+    margin-top: 40px;
+    border-radius:5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    background-color: #504f4f6a;
+    font-family: "DynaPuff", system-ui;
+    font-size: 1rem;
+    gap: 10px;
+}
+
+#take_game:hover {
+    width: 60%;
+    height: 40px;
+    transition-duration: 0.3s;
 
 }
