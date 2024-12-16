@@ -83,7 +83,7 @@ h1{
     padding: 1rem;
     text-decoration: none;
 }
-a{
+a{ 
     color: var(--purpleSoft);
     font-weight: bold;
     font-size: 1.3rem;
@@ -188,6 +188,10 @@ a:hover{
     border-radius: 6rem;
     width: auto;
     height: auto;
+}
+
+.sections.sintomas .text-h4{
+    margin-bottom: 1rem;
 }
 
 
@@ -478,6 +482,13 @@ footer {
 
   
 @media screen and (max-width: 767px) {
+    /* SESÃO SINTOMAS */
+    .sections.sintomas{
+        display: flex;
+        flex-direction: column;
+    }
+
+        /* FOOTER */
     .Container {
         display: flex;
         flex-direction: column;
