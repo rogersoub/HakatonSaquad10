@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../images/logoRound.png">
-    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Transtornos psicológicos</title>
-    <link rel="stylesheet" href="../styles/global.css">
-</head>
+
 <body>
     <!-- CABEÇALHO -->
     <header>
@@ -53,9 +51,29 @@
     </header>
 
         <main id="main">
-                <section id="dados">
-        
+               
+    
+            <section>
+                <div class="container">
+                    <h1>Desigualdade Social e Transtornos Mentais</h1>
+                    
+                    <section>
+                        <!-- Dados escritos -->
+                        <div class="text-section">
+                            <p>A desigualdade social afeta diretamente a saúde mental de diferentes grupos da sociedade. A pobreza, o acesso limitado à educação, a falta de serviços médicos e a discriminação aumentam o risco de transtornos mentais como depressão, ansiedade e transtornos de estresse pós-traumático. A seguir, exploramos como diferentes níveis de renda impactam a prevalência de transtornos mentais.</p>
+                            <p>Aqueles que vivem em condições de pobreza enfrentam maior estresse psicológico devido à insegurança financeira, condições de habitação precárias e falta de acesso a cuidados de saúde. Já aqueles em níveis de renda mais elevados tendem a ter acesso melhor a recursos e apoio psicológico, o que pode reduzir a prevalência de distúrbios mentais.</p>
+                        </div>
+            
+                        <!-- Dados em Gráfico -->
+                        <canvas id="myChart"></canvas>
+            
+                        <div class="text-section">
+                            <p>Os dados a seguir ilustram a prevalência de transtornos mentais em diferentes grupos de renda: alta, média e baixa. A distribuição de transtornos mentais é mais prevalente entre os grupos de baixa renda devido aos fatores mencionados acima.</p>
+                        </div>
+                    </section>
             </section>
+            
+
 
             <section id="preconceito">
 
@@ -64,8 +82,8 @@
             <!-- ROGER -->
             <section id="solucao" class="sections solucao">
                 <article class="area-text">
-                    <h1 class="text-h1">Um outro problema é a má qualidade dos cuidados prestados a muitos que recebem tratamento.</h1>
-                    <p class="text-p">Além do apoio dos serviços de saúde, pessoas com transtornos mentais precisam de apoio e cuidados sociais. Frequentemente necessitam também de ajuda para acessar programas educativos que se adaptem às suas necessidades e encontrar emprego e moradia que lhes permitam viver e ser ativos nas suas comunidades locais.</p>
+                    <h1 class="text-h1">CAPS</h1>
+                    <p class="text-p">Um outro problema é a má qualidade dos cuidados prestados a muitos que recebem tratamento. Além do apoio dos serviços de saúde, pessoas com transtornos mentais precisam de apoio e cuidados sociais. Frequentemente necessitam também de ajuda para acessar programas educativos que se adaptem às suas necessidades e encontrar emprego e moradia que lhes permitam viver e ser ativos nas suas comunidades locais.</p>
                 </article>
                 
                 <!-- BUSCA CEP -->
@@ -166,5 +184,12 @@
         
         <script src="../js/scrolRevel.js"></script>
         <script src="../js/getCep.js"></script>
+        
+            <!-- Link para o Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="../styles/global.css">
+        <script src="../js/desigualdade.js" defer></script>
+    
+        
     </body>
 </html>

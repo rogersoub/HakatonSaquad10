@@ -1,0 +1,113 @@
+/* SESSÃO DE DIFERENÇAS */
+.sections.diferenca{
+    width: 100%;
+    height: 100%;
+    max-height: 70rem ;
+}
+
+.diferenca .text-h4{
+    margin-bottom: 1rem;
+}
+.diferenca .area-text.informativo{
+    width: 100%;
+    height: 100%;
+    max-height: 200rem ;
+}
+
+/* SESÃO DE TRANSIÇÃO DE TIPOS */
+.paralax.paralax-3{
+    background-image: url("../images/rainPurple.png");
+}
+
+/* SEÇÃO DE TIPOS */
+.sections.tipos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    max-height: 300rem;
+}
+.tipos .area-text{
+    margin-top: 1rem;
+    border-top: 2px solid var(--purpleSoft) ;
+}
+.tipos .esquizofrenia:hover, .depressao:hover, .bipolaridade:hover{
+    border-top: 4px solid var(--puple) ;
+    transform: translateX(20px);
+    transition: 0.8s all;
+}
+
+
+.area-text-div .text-h4{
+    margin: 1rem;
+}
+
+/* SESÃO GAME PEDRO */
+.sections.game{
+    flex-direction: row;
+}
+.game .text-img img{
+    width: 20rem;
+    margin: 2rem;
+}
+ 
+
+
+
+
+
+/* RESPONSIVIDADE */
+/* comeca a diminuir */
+@media(max-width:1000px){
+    .sections.diferenca{
+        display: flex;
+        flex-direction: column;
+    }
+    .sections.game{
+        max-width: 100rem;
+        max-height: 100rem;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+
+
+
+/* tablet */
+@media screen and (max-width: 767px) {
+/* SEÇÃO DE TIPOS */
+.sections.tipos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    max-height: 360rem;
+}
+
+
+}
+
+
+
+
+/* CELULARES */
+@media (max-width: 400px) {
+
+    /* SESSÃO DE DIFERENÇAS */
+.sections.diferenca{
+    max-height: 85rem ;
+}
+
+.sections.tipos{
+    max-height: 430rem;
+}
+
+}
