@@ -217,6 +217,8 @@ iframe {
 .sections.resultRelatos{
     width: 100%; /* ocupa toda a largura disponivel */
     max-width: 1200px; /* limita a largura maxima da seção */
+    max-height: auto;
+    height: 100%; /*com ele no 100 vai ficar sem rolador */
     margin: 0 auto; /* centraliza a section na pagina */
     padding: 1rem; /* espaçamento interno */
     box-sizing: border-box; /* padding e border no calculo da largura */
@@ -228,7 +230,7 @@ iframe {
     gap: 1.5rem; /* espaço entre as divs */
     overflow-y: auto; /* barra de rolagem vertical*/
     margin-top: 2rem;
-    padding-top: 4rem;
+    /* padding-top: auto; */
 }
 
 /* ROLADORES RSECTION*/
@@ -405,8 +407,6 @@ iframe {
     }
 
     /* SECTION DE COLOCAR RELATO */
-    .area-exemple{
-    }
     /* input */
     #nameInp,#send,#msgInp {
         width: 100%;
