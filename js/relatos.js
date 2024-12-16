@@ -112,7 +112,7 @@ form.addEventListener("submit", (event)=> {
 
 
 function openModal(message){
-    alert(message)
+    alert(message);
 
     // modalDiv.id = "modalDiv";
     // modalDiv.style.display="flex";
