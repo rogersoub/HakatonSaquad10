@@ -77,6 +77,8 @@
 .sections.saude{
     display: flex;
     align-items: center; 
+    max-height: 100rem;
+    height: 100%;
 }
 
 #dados li strong {
@@ -100,4 +102,42 @@
 #dados p:last-child {
     text-align: center; 
     font-style: italic; 
+}
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+/* comeca a diminuir */
+@media(max-width:1000px){
+
+}
+
+
+
+
+/* tablet */
+@media screen and (max-width: 767px) {
+
+    .sections.solucao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
+
+/* CELULARES */
+@media (max-width: 400px) {
+    .sections.dadosDesi{
+        max-height: 105rem;
+    }
 }

@@ -18,7 +18,7 @@ view.addEventListener("submit",(event) =>{//não vai recarregar
 
 
 
-    const visible = document.querySelectorAll(".viewSuport");
+    const visible = document.querySelectorAll(".viewSuport");//classe q vai exibir
     
 
     // //Modal
