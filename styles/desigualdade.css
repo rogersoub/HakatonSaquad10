@@ -1,47 +1,75 @@
-/* ROGER */
+/* SESAO DE DADOS */
+.sections.dadosDesi{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    max-height: 60rem;
+}
+
+
+canvas {
+    display: flex;
+    max-width: 500rem;
+    width: 100%;
+
+
+}
+
+
+/* ROGER SOLUCAO*/
 .viewSuport{
     display: none;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f9;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
-
-canvas {
-    max-width: 100%;
-}
-
-.text-section {
-    margin-bottom: 30px;
-}
-
 .sections.solucao{
-    margin: 5rem;
+    margin: 1rem;
+}
+.area-text .text-h1{
+    margin-top: 1rem;
+}
+.area-text .text-h4{
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+/* comeca a diminuir */
+@media(max-width:1000px){
+
+}
+
+
+
+
+/* tablet */
+@media screen and (max-width: 767px) {
+
+    .sections.solucao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
+
+/* CELULARES */
+@media (max-width: 400px) {
+    .sections.dadosDesi{
+        max-height: 105rem;
+    }
 }
