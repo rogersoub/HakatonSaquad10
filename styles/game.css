@@ -39,6 +39,10 @@
     transition: 0.8s all;
 }
 
+#imgWhy{
+    width: 15rem;
+    margin: 1rem;
+}
 
 .area-text-div .text-h4{
     margin: 1rem;
